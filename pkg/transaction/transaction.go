@@ -8,13 +8,15 @@ import (
 	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/transaction/response"
 )
 
-const createTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.0/transactions"
-const commitTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.0/transactions"
-const getTransactionStatusEndpoint = "rswebpaytransaction/api/webpay/v1.0/transactions/%s"
-const refundTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.0/transactions/%s/refunds"
+const createTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.2/transactions"
+const commitTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.2/transactions"
+const getTransactionStatusEndpoint = "rswebpaytransaction/api/webpay/v1.2/transactions/%s"
+const refundTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.2/transactions/%s/refunds"
 
-/*Create It allows to initialize a transaction in Webpay.
-In response to the invocation, a token is generated that uniquely represents a transaction.*/
+/*
+Create It allows to initialize a transaction in Webpay.
+In response to the invocation, a token is generated that uniquely represents a transaction.
+*/
 func Create(buyOrder string, sessionID string, amount int, returnURL string) (response.TransactionCreateResponse, error) {
 
 	body := map[string]interface{}{
@@ -37,8 +39,10 @@ func Create(buyOrder string, sessionID string, amount int, returnURL string) (re
 	return transactionCreateResponse, err
 }
 
-/*Commit It allows you to confirm and obtain the result of the transaction once Webpay
-has resolved your financial authorization.*/
+/*
+Commit It allows you to confirm and obtain the result of the transaction once Webpay
+has resolved your financial authorization.
+*/
 func Commit(token string) (response.TransactionCommitResponse, error) {
 	httpClient := client.GetInstance()
 
@@ -55,10 +59,12 @@ func Commit(token string) (response.TransactionCommitResponse, error) {
 	return transactionCommitResponse, err
 }
 
-/*GetStatus This operation allows you to obtain the status of the transaction at any time.
+/*
+GetStatus This operation allows you to obtain the status of the transaction at any time.
 Under normal conditions, it is probably not required to execute.
 But in the event of an unexpected error,
-it allows knowing the status and taking the corresponding actions.*/
+it allows knowing the status and taking the corresponding actions.
+*/
 func GetStatus(token string) (response.TransactionStatusResponse, error) {
 
 	httpClient := client.GetInstance()
@@ -76,8 +82,10 @@ func GetStatus(token string) (response.TransactionStatusResponse, error) {
 	return transactionStatusResponse, err
 }
 
-/*Refund It allows you to request from Webpay the cancellation of a transaction made previously
-and that is currently in force.*/
+/*
+Refund It allows you to request from Webpay the cancellation of a transaction made previously
+and that is currently in force.
+*/
 func Refund(token string, amount int) (response.TransactionRefundResponse, error) {
 	httpClient := client.GetInstance()
 

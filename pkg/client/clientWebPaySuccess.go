@@ -18,9 +18,9 @@ func (client ClientWebPaySuccess) Post(endpoint string, body map[string]interfac
 
 	var fixture string = ""
 
-	if endpoint == "rswebpaytransaction/api/webpay/v1.0/transactions" {
+	if endpoint == "rswebpaytransaction/api/webpay/v1.2/transactions" {
 		fixture = `{"token":"7452125458955","url":"http://github.com"}`
-	} else if endpoint == "rswebpaytransaction/api/webpay/v1.0/transactions/tokenrefundtest/refunds" {
+	} else if endpoint == "rswebpaytransaction/api/webpay/v1.2/transactions/tokenrefundtest/refunds" {
 		fixture = `{
 			"type":"NULLIFY",
 			"authorization_code":"123456",

@@ -44,7 +44,7 @@ func TestPost_response_validate(t *testing.T) {
 		"return_url": "https://google.com/",
 	}
 
-	resp, err := httpClient.Post("rswebpaytransaction/api/webpay/v1.0/transactions", body)
+	resp, err := httpClient.Post("rswebpaytransaction/api/webpay/v1.2/transactions", body)
 
 	if err != nil {
 		t.Errorf("want not error %v", err)

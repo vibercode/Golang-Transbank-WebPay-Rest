@@ -1,4 +1,4 @@
-module github.com/fenriz07/Golang-Transbank-WebPay-Rest
+module github.com/vibercode/Golang-Transbank-WebPay-Rest
 
 go 1.14
 

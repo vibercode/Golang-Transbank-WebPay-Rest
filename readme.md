@@ -8,9 +8,9 @@
 
 <p align="center">
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/fenriz07/Golang-Transbank-WebPay-Rest)](https://goreportcard.com/report/github.com/fenriz07/Golang-Transbank-WebPay-Rest)
-![Test](https://github.com/fenriz07/Golang-Transbank-WebPay-Rest/workflows/Test/badge.svg)
-<a href="https://pkg.go.dev/github.com/fenriz07/Golang-Transbank-WebPay-Rest"><img src="https://godoc.org/github.com/fenriz07/Golang-Transbank-WebPay-Rest?status.svg" alt="GoDoc"></a>
+[![Go Report Card](https://goreportcard.com/badge/github.com/vibercode/Golang-Transbank-WebPay-Rest)](https://goreportcard.com/report/github.com/vibercode/Golang-Transbank-WebPay-Rest)
+![Test](https://github.com/vibercode/Golang-Transbank-WebPay-Rest/workflows/Test/badge.svg)
+<a href="https://pkg.go.dev/github.com/vibercode/Golang-Transbank-WebPay-Rest"><img src="https://godoc.org/github.com/vibercode/Golang-Transbank-WebPay-Rest?status.svg" alt="GoDoc"></a>
 
 </p>
 
@@ -27,12 +27,12 @@
 ## Ejemplo de uso (Gorilla):
 
 Ejemplo de proyecto donde esta implementado
-https://github.com/fenriz07/EjemploTransbankGoRest
+https://github.com/vibercode/EjemploTransbankGoRest
 
 ## Instalación
 
 ```bash
-go get github.com/fenriz07/Golang-Transbank-WebPay-Rest
+go get github.com/vibercode/Golang-Transbank-WebPay-Rest
 ```
 
 ## Uso
@@ -44,7 +44,7 @@ Hay 2 ambientes Integración y producción
 ```go
 //Importar el package webpayplus
 import (
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/webpayplus"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/webpayplus"
 )
 ```
 
@@ -199,8 +199,8 @@ type TransactionRefundResponse struct {
 ```
 
 ## Otras bibliotecas para los servicios de transbank:
-- [OneClick Mall](https://github.com/fenriz07/Golang-Transbank-Oneclick-mall)
+- [OneClick Mall](https://github.com/vibercode/Golang-Transbank-Oneclick-mall)
 
 ## Creador
 
-[Fenriz07](https://github.com/fenriz07)
+[vibercode](https://github.com/vibercode)

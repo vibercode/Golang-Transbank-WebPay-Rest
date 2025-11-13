@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/client"
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/transaction/response"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/client"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/transaction/response"
 )
 
 const createTransactionEndpoint = "rswebpaytransaction/api/webpay/v1.2/transactions"

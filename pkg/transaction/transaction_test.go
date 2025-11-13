@@ -3,8 +3,8 @@ package transaction
 import (
 	"testing"
 
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/client"
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/environment"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/client"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/environment"
 )
 
 func TestCreate_success(t *testing.T) {

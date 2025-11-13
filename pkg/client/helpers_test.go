@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/environment"
 	"github.com/go-resty/resty/v2"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/environment"
 )
 
 func TestGetHeaders(t *testing.T) {

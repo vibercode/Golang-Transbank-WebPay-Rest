@@ -3,7 +3,7 @@ package client
 import (
 	"testing"
 
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/environment"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/environment"
 )
 
 func TestPost_response_invalid(t *testing.T) {

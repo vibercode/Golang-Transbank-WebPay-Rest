@@ -1,8 +1,8 @@
 package webpayplus
 
 import (
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/client"
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/environment"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/client"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/environment"
 )
 
 /*SetEnvironmentIntegration fascade for instance integration evironment*/

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/transaction"
-	"github.com/fenriz07/Golang-Transbank-WebPay-Rest/pkg/webpayplus"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/transaction"
+	"github.com/vibercode/Golang-Transbank-WebPay-Rest/pkg/webpayplus"
 )
 
 func main() {
